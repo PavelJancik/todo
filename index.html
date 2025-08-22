@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TODO list</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="icon" href="" type="image/icon type"> <!-- you can add your logo -->
+</head>
+
+<body onload="init()">
+
+    <div id="copy_info_wrap">
+        <div class="copy_info">
+            <div style="color: var(--custom_dark_blue)">Tips:</div>
+            <div style="color: var(--custom_cyan)">This application save your items into local storage,
+                therefore it is important to not move the folder, once you start using this tool</div>
+            <div style="color: var(--custom_light_blue)">Create bookmark in your browser for easy access</div>
+        </div>
+    </div>
+
+    <div id="menu">
+        <img src="" width="150px"> <!-- you can add your logo -->
+        <button onclick="show_info_clicked(this)" style="float: right;">Show Info</button>
+        <button onclick="create_new_item()" style="float:left">New Item</button>
+    </div>
+
+    <div id="containers">
+        <div id='todo' class="container"></div>
+        <div id='progress' class="container"></div>
+        <div id='done' class="container"></div>
+        <div id="trash_bin" class="container"></div>
+    </div>
+
+    <img id="empty_trash_icon" src="fire.gif" onclick="empty_trash_bin()">
+    <img id="trash_bin_icon" src="trash_bin.png" onclick="toggle_trash()">
+    <img id="preview_mode_icon" src="eye.png" onclick="toggle_preview_mode()">
+
+</body>
+
+</html>
