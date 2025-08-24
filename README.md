@@ -1,7 +1,7 @@
 # To-Do App
 
 <p align="center">
-  <img src="/screenshot.png" alt="todo application" width="400"/>
+  <img src="/screenshot.png" alt="todo application"/>
 </p>
 
 This is a simple To-Do web application.
